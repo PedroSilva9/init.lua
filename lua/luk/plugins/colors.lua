@@ -17,6 +17,28 @@ return {
           italic = false,
         },
       }
+    end,
+  },
+  {
+    'folke/tokyonight.nvim',
+    lazy = false,
+    opts = {},
+    config = function() end,
+  },
+  {
+    'tiagovla/tokyodark.nvim',
+    opts = {
+      styles = {
+        comments = { italic = true },
+        keywords = { italic = false },
+        identifiers = { italic = false },
+        functions = {},
+        variables = {},
+      },
+    },
+    config = function(_, opts)
+      require('tokyodark').setup(opts)
+      -- vim.cmd.colorscheme 'tokyodark'
       ColorMyPencils()
     end,
   },
