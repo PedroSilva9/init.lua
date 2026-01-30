@@ -28,6 +28,7 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 vim.opt.signcolumn = 'yes'
+vim.opt.colorcolumn = '120'
 
 vim.opt.updatetime = 50
 vim.opt.timeoutlen = 300
